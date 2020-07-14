@@ -59,16 +59,34 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
             case R.id.nav_home:
                 break;
+            case R.id.nav_cycle:
+                Toast.makeText(this, "clicked Cycle", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.nav_bus:
                 Intent intent = new Intent(this, BusActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_share:
-                Toast.makeText(this, "Clicked Toast Button", Toast.LENGTH_SHORT).show();
+            case R.id.nav_car:
+                Toast.makeText(this, "Clicked Car", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_login:
-                Toast.makeText(this, "Clicked Login Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Clicked Login", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.nav_logout:
+                Toast.makeText(this, "Clicked Logout", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_profile:
+                Toast.makeText(this, "Clicked Profile", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_share:
+                Toast.makeText(this, "Clicked Share", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_rate:
+                Toast.makeText(this, "Clicked Rate", Toast.LENGTH_SHORT).show();
+                break;
+
         }
 
         mDrawerLayout.closeDrawer(GravityCompat.START);
